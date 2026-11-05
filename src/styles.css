@@ -304,3 +304,9 @@ html,body{overflow-x:clip}
 .author-box{display:flex;gap:16px;align-items:flex-start;margin-top:56px;padding:24px;background:var(--paper);border-radius:var(--r)}
 .author-box p{color:var(--ink-2);font-size:15px;margin:4px 0 8px}
 @media (max-width:680px){.post-row{grid-template-columns:1fr;gap:6px}.go-ic{display:none}.prose{font-size:17px}}
+
+/* ---------- CLIENT LOGOS ---------- */
+.wm-logo img{height:var(--h,36px);width:auto;filter:grayscale(1) contrast(1.15);transition:filter .3s}
+.wm-logo:hover img{filter:none}
+.cs-logo{height:48px;width:auto;margin-bottom:18px}
+@media (max-width:680px){.wm-logo img{height:calc(var(--h,36px)*.8)}}
