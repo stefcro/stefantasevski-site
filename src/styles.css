@@ -291,7 +291,18 @@ html,body{overflow-x:clip}
 @media (max-width:680px){.post-row{grid-template-columns:1fr;gap:6px}.go-ic{display:none}.prose{font-size:17px}}
 
 /* ---------- CLIENT LOGOS ---------- */
-.wm-logo img{height:var(--h,36px);width:auto;filter:grayscale(1) contrast(1.15);transition:filter .3s}
+.wm-logo img{height:var(--h,36px);width:auto;filter:brightness(0);transition:filter .3s}
 .wm-logo:hover img{filter:none}
 .cs-logo{height:48px;width:auto;margin-bottom:18px}
 @media (max-width:680px){.wm-logo img{height:calc(var(--h,36px)*.8)}}
+/* logos in experience rows (white on dark) and in win cards */
+.xp{grid-template-columns:150px 1fr 1.3fr auto}
+.xp-logo{display:flex;align-items:center;height:48px}
+.xp-logo img{height:var(--h,28px);width:auto;max-width:140px;object-fit:contain;filter:brightness(0) invert(1);opacity:.85;transition:opacity .3s}
+.xp:hover .xp-logo img{opacity:1}
+.card{position:relative}
+.card-logo{position:absolute;right:20px;bottom:20px;height:var(--h,24px);width:auto;max-width:130px;object-fit:contain;filter:brightness(0);opacity:.6;transition:filter .3s,opacity .3s}
+.card:hover .card-logo{filter:none;opacity:1}
+.card:has(.card-logo) .chips{margin-right:150px}
+@media (max-width:1000px){.xp{grid-template-columns:120px 1fr auto}.xp .win{grid-column:2 / -1;grid-row:2}.xp-logo{grid-row:1 / span 2}}
+@media (max-width:680px){.xp{grid-template-columns:84px 1fr;gap:6px 14px}.xp .when{grid-column:2;text-align:left}.xp .win{grid-column:2;grid-row:auto}.xp-logo{grid-row:1 / span 3;align-self:start;height:auto;align-items:flex-start;padding-top:6px}.xp-logo img{max-width:80px;height:calc(var(--h,28px)*.8)}.card-logo{max-width:100px}.card:has(.card-logo) .chips{margin-right:110px}}
