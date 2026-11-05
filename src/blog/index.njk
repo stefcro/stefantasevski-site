@@ -1,0 +1,30 @@
+---
+layout: base.njk
+title: Blog — SEO & AEO insights
+description: Stefan Tasevski’s take on SEO, AEO and organic growth — what works in Google and AI search for eCommerce, B2B and agency brands.
+permalink: /blog/
+---
+<section class="sec" style="padding-top:40px">
+  <div class="sec-head rv">
+    <div class="wmk">Insights</div>
+    <h1 class="sec-title">/Blog</h1>
+    <p class="sec-sub">My take on SEO, AEO and organic growth — what actually moves rankings, AI citations and revenue.</p>
+  </div>
+  {% if collections.posts.length %}
+  <div class="post-list">
+    {% for post in collections.posts %}
+    <a class="post-row rv" href="{{ post.url }}">
+      <span class="mono">{{ post.date | readableDate }}</span>
+      <div>
+        <h2>{{ post.data.title }}</h2>
+        {% if post.data.description %}<p>{{ post.data.description }}</p>{% endif %}
+        <div class="chips" style="margin:12px 0 0">{% for t in post.data.tags %}{% if t != "posts" %}<span class="chip">{{ t }}</span>{% endif %}{% endfor %}</div>
+      </div>
+      <span class="go-ic"><svg width="14" height="14"><use href="#arr"/></svg></span>
+    </a>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p class="note rv" style="text-align:center">First posts are on the way. Follow on <a href="{{ site.linkedin }}" style="text-decoration:underline">LinkedIn</a> or subscribe via <a href="/feed.xml" style="text-decoration:underline">RSS</a>.</p>
+  {% endif %}
+</section>

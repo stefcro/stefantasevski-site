@@ -1,0 +1,30 @@
+---
+layout: base.njk
+ogType: article
+backLabel: Home
+ctaTitle: Want this applied to your site?
+---
+{% set readMins = content | readingTime %}
+<article class="post-page">
+  <header class="post-head rv">
+    <a href="/blog/" class="mono post-crumb">/Blog</a>
+    {% if tags %}<div class="chips" style="margin:14px 0 0">{% for t in tags %}{% if t != "posts" %}<span class="chip">{{ t }}</span>{% endif %}{% endfor %}</div>{% endif %}
+    <h1>{{ title }}</h1>
+    {% if description %}<p class="lead">{{ description }}</p>{% endif %}
+    <div class="byline">
+      <img src="/assets/stefan.webp" alt="">
+      <div><b>Stefan Tasevski</b><span><time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time> · {{ readMins }} min read</span></div>
+    </div>
+  </header>
+  <div class="prose rv">
+{{ content | safe }}
+  </div>
+  <aside class="author-box rv">
+    <img src="/assets/stefan.webp" alt="">
+    <div>
+      <b>Stefan Tasevski</b>
+      <p>SEO Lead at Socially Powerful. 10+ years growing organic traffic, leads and revenue for eCommerce, B2B and agency brands — in Google and in AI answers.</p>
+      <a href="{{ site.linkedin }}" target="_blank" rel="noopener" class="mono">Follow on LinkedIn ↗</a>
+    </div>
+  </aside>
+</article>

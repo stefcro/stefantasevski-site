@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ title }}{% if not homeTitle %} — {{ site.name }}{% endif %}</title>
+<meta name="description" content="{{ description or site.description }}">
+<link rel="canonical" href="{{ page.url | absUrl(site.url) }}">
+<meta property="og:type" content="{{ ogType or 'website' }}">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ description or site.description }}">
+<meta property="og:url" content="{{ page.url | absUrl(site.url) }}">
+<meta property="og:image" content="{{ (image or '/assets/stefan.webp') | absUrl(site.url) }}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }} — Blog" href="/feed.xml">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%230d0d0d'/><text x='32' y='43' font-family='Arial Black,Arial' font-weight='900' font-size='28' fill='%23c8f169' text-anchor='middle'>ST</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800;900&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+{% if schemaJson %}<script type="application/ld+json">{{ schemaJson | safe }}</script>{% endif %}
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="arr" viewBox="0 0 14 14"><path d="M3 11 11 3M4.5 3H11v6.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="back" viewBox="0 0 14 14"><path d="M12 7H2M6 3 2 7l4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="li" viewBox="0 0 24 24"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm7 0h3.8v1.5h.06c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.77 2.5 4.77 5.75v5.7h-4v-5.05c0-1.2-.02-2.75-1.7-2.75-1.7 0-1.95 1.3-1.95 2.66v5.14H10v-11Z"/></symbol>
+  <symbol id="mail" viewBox="0 0 24 24"><path d="M3 6.5h18v11H3z M3.5 7l8.5 6.5L20.5 7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+  <symbol id="doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6zM14 3v4h4M9 12h6M9 16h6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+</svg>
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="/" class="pill"><svg width="14" height="14"><use href="#back"/></svg>{{ backLabel or "Home" }}</a>
+    <ul>
+      <li><a href="/#work">Wins</a></li>
+      <li><a href="/#expertise">Expertise</a></li>
+      <li><a href="/#experience">Experience</a></li>
+      <li><a href="/blog/">Blog</a></li>
+    </ul>
+    <a href="mailto:{{ site.email }}" class="btn">Let’s talk <svg><use href="#arr"/></svg></a>
+  </div>
+</header>
+<main class="wrap">
+{{ content | safe }}
+</main>
+<footer class="cta-sec" id="contact">
+  <div class="wrap">
+    <span class="status"><span class="dot"></span>Open to new projects</span>
+    <h2>{{ ctaTitle or "Want search to drive revenue?" }}</h2>
+    <p>Whether you need an SEO lead, an AEO audit or a growth partner for your agency’s clients — let’s talk.</p>
+    <div class="cta-row">
+      <a href="mailto:{{ site.email }}" class="btn">{{ site.email }} <svg><use href="#arr"/></svg></a>
+      <a href="{{ site.linkedin }}" target="_blank" rel="noopener" class="btn ghost">Connect on LinkedIn</a>
+    </div>
+    <div class="foot">
+      <a href="/" class="me"><img src="/assets/stefan.webp" alt="">Stefan Tasevski</a>
+      <a class="pill" href="{{ site.linkedin }}" target="_blank" rel="noopener"><svg><use href="#li"/></svg>LinkedIn</a>
+      <a class="pill" href="mailto:{{ site.email }}"><svg><use href="#mail"/></svg>Email</a>
+      <a class="pill" href="/blog/"><svg><use href="#doc"/></svg>Blog</a>
+      <a class="pill" href="/feed.xml">RSS</a>
+    </div>
+    <p class="copy">© 2026 Stefan Tasevski · SEO & AEO Lead</p>
+  </div>
+</footer>
+<script src="/main.js"></script>
+</body>
+</html>
