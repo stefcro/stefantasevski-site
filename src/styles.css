@@ -71,21 +71,6 @@ img{display:block;max-width:100%}
 @keyframes scroll{to{transform:translateX(-50%)}}
 .wm{white-space:nowrap;color:#1b1b1b;opacity:.55;transition:opacity .3s;font-size:26px;display:flex;align-items:center;gap:8px}
 .wm:hover{opacity:1}
-.wm-sp{font-family:var(--display);font-weight:800;letter-spacing:-.02em}
-.wm-sp i{font-style:normal;font-weight:400}
-.wm-wavesy{font-family:var(--body);font-weight:700;letter-spacing:-.04em;text-transform:lowercase}
-.wm-wavesy::before{content:"";width:22px;height:12px;border:3px solid currentColor;border-top:0;border-radius:0 0 22px 22px}
-.wm-huemor{font-family:var(--display);font-weight:900;letter-spacing:.08em;font-size:24px}
-.wm-fr{font-family:var(--body);font-weight:700;letter-spacing:-.02em}
-.wm-fr b{font-weight:400}
-.wm-st{font-family:var(--display);font-weight:800;font-style:italic;letter-spacing:-.02em}
-.wm-dsg{font-family:Georgia,serif;font-size:22px;letter-spacing:.02em}
-.wm-to{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:22px;letter-spacing:.04em}
-.wm-to::before{content:"";width:20px;height:20px;border-radius:50%;border:5px solid currentColor}
-.wm-sg{font-family:var(--display);font-weight:900;font-size:24px}
-.wm-sg em{font-style:normal;background:currentColor;color:var(--bg);padding:0 6px;border-radius:4px;margin:0 3px;font-size:18px}
-.wm-dcf{font-family:ui-monospace,monospace;font-weight:700;font-size:21px;letter-spacing:-.04em}
-.wm-mx{font-family:var(--display);font-weight:900;letter-spacing:.12em;font-size:20px}
 
 /* ---------- SECTIONS ---------- */
 section{position:relative;overflow-x:clip}
