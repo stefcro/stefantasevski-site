@@ -1,4 +1,4 @@
-# stefantasevski.vercel.app
+# stefantasevski.com
 
 Personal SEO/AEO portfolio + blog. Built with [Eleventy](https://www.11ty.dev/), hosted on Vercel.
 Every commit to `main` publishes automatically.

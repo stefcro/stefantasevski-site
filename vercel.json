@@ -1,6 +1,17 @@
 {
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "stefantasevski.vercel.app"
+        }
+      ],
+      "destination": "https://stefantasevski.com/:path*",
+      "permanent": true
+    },
+    {
       "source": "/blog/ai-knows-what-your-brand-does-but-not-who-its-for/",
       "destination": "/blog/ai-knows-your-brand-does-it-know-who-its-for/",
       "permanent": true
