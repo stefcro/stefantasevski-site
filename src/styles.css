@@ -310,7 +310,8 @@ html,body{overflow-x:clip}
 /* ---------- CASE STUDY: German eCommerce ---------- */
 .chip-strong{background:var(--ink);color:#fff;border-color:var(--ink);font-weight:500;padding:6px 12px;font-size:13px}
 .cs-cover{padding:0!important}
-.cs-cover>img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}
+.cs-cover>img{width:100%;height:auto;aspect-ratio:32/9;object-fit:cover;object-position:right center;display:block}
+@media (max-width:680px){.cs-cover>img{aspect-ratio:2/1;object-position:65% center}.cs-cover-tag{white-space:nowrap;font-size:10px!important;padding:5px 10px}}
 .cs-cover-tag{position:absolute;top:22px;left:24px;color:#cfcfcf!important;background:rgba(0,0,0,.35);backdrop-filter:blur(6px);padding:6px 12px;border-radius:99px;font-size:12px}
 .cs-cover .results{margin:0;border-radius:0}
 .shot{margin:28px 0;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:10px;overflow:hidden}
