@@ -393,3 +393,5 @@ html,body{overflow-x:clip}
 .beyond-body>.btn{margin-top:32px}
 @media (max-width:1000px){.beyond{grid-template-columns:1fr}.beyond-num{position:static}}
 @media (max-width:680px){.beyond-chips li{font-size:13px;padding:7px 12px}}
+.prose pre{white-space:pre-wrap;word-break:break-word;line-height:1.6}
+.prose pre code{font-size:14px}
