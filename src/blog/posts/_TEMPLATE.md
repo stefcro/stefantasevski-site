@@ -1,13 +1,13 @@
 ---
 # ─────────────────────────────────────────────────────────────
-#  TEMPLATE — copy this file to start a new post.
+#  TEMPLATE: copy this file to start a new post.
 #  1. Duplicate it and rename, e.g.  ai-overviews-and-ecommerce.md
 #     (the file name becomes the URL: /blog/ai-overviews-and-ecommerce/)
 #  2. Fill in the fields below.
 #  3. Change  draft: true  to  draft: false  to publish.
 #  This template itself stays a draft and is never published.
 # ─────────────────────────────────────────────────────────────
-title: "Your post title — keep it under 60 characters"
+title: "Your post title (keep it under 60 characters)"
 description: "One or two sentences. Used as the meta description and in Google results (aim for ~150 characters)."
 date: 2026-11-05
 tags: ["AEO", "Technical SEO"]

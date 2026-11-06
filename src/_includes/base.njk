@@ -5,7 +5,7 @@
 {% include "clarity.njk" %}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{{ title }}{% if not homeTitle %} — {{ site.name }}{% endif %}</title>
+<title>{{ title }}{% if not homeTitle %} | {{ site.name }}{% endif %}</title>
 <meta name="description" content="{{ description or site.description }}">
 <link rel="canonical" href="{{ page.url | absUrl(site.url) }}">
 <meta property="og:type" content="{{ ogType or 'website' }}">
@@ -14,7 +14,7 @@
 <meta property="og:url" content="{{ page.url | absUrl(site.url) }}">
 <meta property="og:image" content="{{ (image or '/assets/stefan.webp') | absUrl(site.url) }}">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="alternate" type="application/rss+xml" title="{{ site.name }} — Blog" href="/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }} | Blog" href="/feed.xml">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%230d0d0d'/><text x='32' y='43' font-family='Arial Black,Arial' font-weight='900' font-size='28' fill='%23c8f169' text-anchor='middle'>ST</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800;900&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -48,7 +48,7 @@
   <div class="wrap">
     <span class="status"><span class="dot"></span>Open to new projects</span>
     <h2>{{ ctaTitle or "Want search to drive revenue?" }}</h2>
-    <p>Whether you need an SEO lead, an AEO audit or a growth partner for your agency’s clients — let’s talk.</p>
+    <p>Whether you need an SEO lead, an AEO audit or a growth partner for your agency’s clients? Let’s talk.</p>
     <div class="cta-row">
       <a href="mailto:{{ site.email }}" class="btn">{{ site.email }} <svg><use href="#arr"/></svg></a>
       <a href="{{ site.linkedin }}" target="_blank" rel="noopener" class="btn ghost">Connect on LinkedIn</a>
