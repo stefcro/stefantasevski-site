@@ -22,6 +22,9 @@ The recent Google Search Console discussion started with unusual patterns: click
 
 [Barry Schwartz shared the issue on X](https://x.com/rustybrick/status/2117637034206507118), drawing attention to observations from Joy Hawkins. [Hawkins posted her own example](https://x.com/JoyanneHawkins/status/2117630857317916805), and [Glenn Gabe reported similar activity](https://x.com/glenngabe/status/2117640763182051610) on some properties. The cause was still uncertain in the coverage, with automated activity and a reporting issue among the explanations being discussed.
 
+<blockquote class="twitter-tweet" data-dnt="true" data-align="center"><p>Barry Schwartz (@rustybrick) on the unusual click spikes in Google Search Console.</p><a href="https://twitter.com/rustybrick/status/2117637034206507118">View the post on X</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 In her [Search Engine Journal analysis of the November click spikes](https://www.searchenginejournal.com/november-click-spikes-in-google-search-console-are-bot-traffic-how-to-filter-your-reports/595834/), Marie Haynes examined patterns that appeared inconsistent with normal human searching: unusually high click-through rates on lower-ranking pages, desktop-heavy spikes, and clusters of slightly reworded queries.
 
 That raises a question worth asking well beyond this particular incident:
