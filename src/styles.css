@@ -376,3 +376,20 @@ html,body{overflow-x:clip}
   .wins-nav{display:none}
 }
 @media (max-width:680px){.filters>.btn{display:none}.win-metric{font-size:26px}.cases-row .thumb{aspect-ratio:16/10}}
+
+/* ---------- BEYOND THE ROLES ---------- */
+.beyond{display:grid;grid-template-columns:minmax(280px,.9fr) 1.4fr;gap:clamp(28px,5vw,72px);align-items:start}
+.beyond-num{background:var(--accent);border-radius:var(--r);padding:clamp(24px,3vw,36px);position:sticky;top:96px}
+.beyond-num>b{display:block;font-family:var(--display);font-weight:900;font-size:clamp(88px,11vw,168px);line-height:.85;letter-spacing:-.05em}
+.beyond-num>span{display:block;font-size:17px;font-weight:500;margin-top:14px;max-width:300px;line-height:1.35}
+.beyond-meta{display:grid;grid-template-columns:auto 1fr;gap:20px;margin-top:28px;padding-top:20px;border-top:1px solid rgba(0,0,0,.15)}
+.beyond-meta small{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;opacity:.6}
+.beyond-meta strong{font-size:15px;font-weight:600}
+.beyond-body>p{font-size:clamp(18px,1.6vw,21px);line-height:1.5;color:var(--ink);max-width:640px}
+.beyond-group{margin-top:28px}
+.beyond-group h3{font-size:12px;margin-bottom:12px;text-transform:uppercase;letter-spacing:.08em}
+.beyond-chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.beyond-chips li{background:var(--paper);border:1px solid var(--line);padding:9px 16px;border-radius:99px;font-size:14px;font-weight:500}
+.beyond-body>.btn{margin-top:32px}
+@media (max-width:1000px){.beyond{grid-template-columns:1fr}.beyond-num{position:static}}
+@media (max-width:680px){.beyond-chips li{font-size:13px;padding:7px 12px}}
