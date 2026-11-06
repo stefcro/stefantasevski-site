@@ -354,15 +354,15 @@ html,body{overflow-x:clip}
 .wins-btn:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
 .wins-row{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 4*14px)/5);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px}
 .wins-row::-webkit-scrollbar{display:none}
-.win{scroll-snap-align:start;background:var(--paper);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:8px;min-height:220px;transition:transform .3s,box-shadow .3s}
-.win:hover{transform:translateY(-4px);box-shadow:0 20px 40px -24px rgba(0,0,0,.25)}
-.win.hide,.card.hide{display:none}
+.win-tile{scroll-snap-align:start;background:var(--paper);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:8px;min-height:220px;transition:transform .3s,box-shadow .3s}
+.win-tile:hover{transform:translateY(-4px);box-shadow:0 20px 40px -24px rgba(0,0,0,.25)}
+.win-tile.hide,.card.hide{display:none}
 .win-tag{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .win-metric{font-family:var(--display);font-weight:900;font-size:clamp(30px,2.6vw,40px);letter-spacing:-.03em;line-height:1;margin-top:6px}
-.win p{font-size:13.5px;color:var(--ink-2);line-height:1.4;flex:1}
+.win-tile p{font-size:13.5px;color:var(--ink-2);line-height:1.4;flex:1}
 .win-foot{border-top:1px solid var(--line);padding-top:12px;min-height:44px;display:flex;align-items:center}
 .win-foot img{height:var(--h,20px);width:auto;max-width:100%;object-fit:contain;filter:brightness(0);opacity:.7;transition:filter .3s,opacity .3s}
-.win:hover .win-foot img{filter:none;opacity:1}
+.win-tile:hover .win-foot img{filter:none;opacity:1}
 .win-who{font-size:13px;font-weight:600}
 @media (max-width:1000px){
   .cases-row{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:46%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
@@ -372,7 +372,7 @@ html,body{overflow-x:clip}
 @media (max-width:680px){
   .cases-row{grid-auto-columns:84%;gap:12px}
   .wins-row{grid-auto-columns:46%;gap:10px}
-  .win{min-height:200px;padding:16px}
+  .win-tile{min-height:200px;padding:16px}
   .wins-nav{display:none}
 }
 @media (max-width:680px){.filters>.btn{display:none}.win-metric{font-size:26px}.cases-row .thumb{aspect-ratio:16/10}}
