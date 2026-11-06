@@ -301,7 +301,7 @@
       {% for post in collections.posts | head(3) %}
       <a class="post-row has-cover rv" href="{{ post.url }}">
         <div class="post-thumb">{{ post | postCover | safe }}</div>
-        <div><span class="mono post-date">{{ post.date | readableDate }}</span><h3>{{ post.data.title }}</h3>{% if post.data.description %}<p>{{ post.data.description }}</p>{% endif %}</div>
+        <div><h3>{{ post.data.title }}</h3>{% if post.data.description %}<p>{{ post.data.description }}</p>{% endif %}<div class="post-by"><img src="/assets/stefan.webp" alt="Stefan Tasevski" width="32" height="32" loading="lazy"><div><b>Stefan Tasevski</b><span>SEO Lead · <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time> · {{ post.content | readingTime }} min read</span></div></div></div>
         <span class="go-ic"><svg width="14" height="14"><use href="#arr"/></svg></span>
       </a>
       {% endfor %}

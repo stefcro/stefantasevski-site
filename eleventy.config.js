@@ -11,8 +11,11 @@ export default function (eleventyConfig) {
       .sort((a, b) => b.date - a.date)
   );
 
-  eleventyConfig.addFilter("readableDate", (d) =>
-    new Date(d).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }));
+  const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  eleventyConfig.addFilter("readableDate", (d) => {
+    const x = new Date(d);
+    return `${x.getUTCDate()} ${MONTHS[x.getUTCMonth()]} ${x.getUTCFullYear()}`;
+  });
   eleventyConfig.addFilter("isoDate", (d) => new Date(d).toISOString());
   eleventyConfig.addFilter("rfcDate", (d) => new Date(d).toUTCString());
   eleventyConfig.addFilter("readingTime", (html = "") =>

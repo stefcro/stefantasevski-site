@@ -19,6 +19,7 @@ const PALETTES = [
 
 function motif(tags = []) {
   const t = tags.join(" ").toLowerCase();
+  if (/(internal link|linking|site architecture)/.test(t)) return "links";
   if (/(search console|analytics|traffic|reporting|click)/.test(t)) return "chart";
   if (/(aeo|ai|llm|entity)/.test(t)) return "graph";
   return "waves";
@@ -53,6 +54,30 @@ export default function postCover(slug, tags = [], W = 1200, H = 630) {
       <path d="${line}" fill="none" stroke="${p.a}" stroke-width="5" stroke-linejoin="round"/>
       <circle cx="${sx}" cy="${Math.min(...pts.map(q => q[1]))}" r="16" fill="none" stroke="${p.a}" stroke-width="3"/>
       <line x1="${sx}" x2="${sx}" y1="40" y2="${H}" stroke="#fff" stroke-opacity=".25" stroke-dasharray="4 8"/>`;
+  } else if (kind === "links") {
+    // a few "pages" (cards with text lines) joined by curved links into one destination
+    const cardW = 230, cardH = 150;
+    const dest = [W * 0.70, H * 0.42];
+    const srcs = [[W * 0.12, H * 0.16], [W * 0.10, H * 0.62], [W * 0.38, H * 0.08], [W * 0.36, H * 0.70]];
+    const jitter = () => (r() - 0.5) * 40;
+    let links = "", cards = "";
+    const lime = "#c8f169";
+    const page = (x, y, w, h, hi) => {
+      let lines = "";
+      for (let k = 0; k < 4; k++) lines += `<rect x="${x + 22}" y="${y + 40 + k * 22}" width="${(w - 44) * (k === 3 ? 0.55 : 0.9 - r() * 0.2)}" height="7" rx="3.5" fill="#fff" fill-opacity="${hi ? .5 : .16}"/>`;
+      return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="18" fill="${hi ? lime : "#ffffff"}" fill-opacity="${hi ? .14 : .04}" stroke="${hi ? lime : "#ffffff"}" stroke-opacity="${hi ? .9 : .18}" stroke-width="${hi ? 3 : 1.5}"/>
+        <rect x="${x + 22}" y="${y + 18}" width="${w * 0.35}" height="9" rx="4.5" fill="${hi ? lime : p.b}" fill-opacity="${hi ? 1 : .8}"/>${lines}`;
+    };
+    srcs.forEach(([x, y], i) => {
+      x += jitter(); y += jitter();
+      const sx = x + cardW, sy = y + 40 + 22 * (1 + (i % 3)), tx = dest[0], ty = dest[1] + 50 + i * 22;
+      const mx = (sx + tx) / 2;
+      links += `<path d="M${sx} ${sy} C${mx} ${sy} ${mx} ${ty} ${tx - 12} ${ty}" fill="none" stroke="url(#${id}l)" stroke-width="3" stroke-opacity=".85"/>
+        <circle cx="${sx}" cy="${sy}" r="6" fill="${p.b}"/><path d="M${tx - 22} ${ty - 8} L${tx - 8} ${ty} L${tx - 22} ${ty + 8}" fill="none" stroke="${lime}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>`;
+      cards += page(x, y, cardW, cardH, false);
+    });
+    cards += page(dest[0], dest[1], cardW * 1.25, cardH * 1.35, true);
+    art = links + cards;
   } else if (kind === "graph") {
     const nodes = [];
     const cx = W * (0.55 + r() * 0.15), cy = H * (0.45 + r() * 0.1);
