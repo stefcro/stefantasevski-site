@@ -332,3 +332,4 @@ html,body{overflow-x:clip}
 .shot-pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .shot-pair .shot{margin:0}
 @media (max-width:680px){.shot-pair{grid-template-columns:1fr}}
+.cs-hero h1 em{display:block;margin:14px 0 0;line-height:1}
