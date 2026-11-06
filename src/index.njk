@@ -299,9 +299,9 @@
     </div>
     <div class="post-list">
       {% for post in collections.posts | head(3) %}
-      <a class="post-row rv" href="{{ post.url }}">
-        <span class="mono">{{ post.date | readableDate }}</span>
-        <div><h3>{{ post.data.title }}</h3>{% if post.data.description %}<p>{{ post.data.description }}</p>{% endif %}</div>
+      <a class="post-row has-cover rv" href="{{ post.url }}">
+        <div class="post-thumb">{{ post | postCover | safe }}</div>
+        <div><span class="mono post-date">{{ post.date | readableDate }}</span><h3>{{ post.data.title }}</h3>{% if post.data.description %}<p>{{ post.data.description }}</p>{% endif %}</div>
         <span class="go-ic"><svg width="14" height="14"><use href="#arr"/></svg></span>
       </a>
       {% endfor %}

@@ -1,7 +1,7 @@
 ---
 title: "AI Knows What Your Brand Does, but Not Who It’s For"
 description: "AI assistants often know what a brand does but not who it is for. Eight steps to make your audience, capabilities and evidence clear to AI search and buyers."
-date: 2026-11-06
+date: 2026-10-15
 tags: ["AEO", "AI search"]
 draft: false
 ---

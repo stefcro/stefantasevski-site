@@ -390,3 +390,12 @@ html,body{overflow-x:clip}
 .prose blockquote.twitter-tweet{font-family:var(--body);font-size:16px;line-height:1.5;border:1px solid var(--line);border-left:4px solid #111;background:var(--paper);border-radius:14px;padding:18px 20px;color:var(--ink-2);max-width:550px;margin:1.6em auto}
 .prose blockquote.twitter-tweet a{font-weight:600}
 .prose .twitter-tweet-rendered{margin:1.6em auto!important}
+
+/* ---------- BLOG COVERS ---------- */
+.post-row.has-cover{grid-template-columns:240px 1fr 44px;align-items:center}
+.post-thumb{border-radius:14px;overflow:hidden;aspect-ratio:16/10;background:#0b0b0c}
+.post-thumb svg,.post-thumb img,.post-cover svg,.post-cover img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.post-row:hover .post-thumb svg,.post-row:hover .post-thumb img{transform:scale(1.04)}
+.post-date{display:block;font-size:13px;margin-bottom:8px}
+.post-cover{border-radius:20px;overflow:hidden;aspect-ratio:21/9;margin:8px 0 28px;background:#0b0b0c}
+@media (max-width:680px){.post-row.has-cover{grid-template-columns:1fr}.post-thumb{aspect-ratio:16/9}.post-cover{aspect-ratio:16/9;border-radius:14px}}

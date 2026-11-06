@@ -13,9 +13,10 @@ permalink: /blog/
   {% if collections.posts.length %}
   <div class="post-list">
     {% for post in collections.posts %}
-    <a class="post-row rv" href="{{ post.url }}">
-      <span class="mono">{{ post.date | readableDate }}</span>
+    <a class="post-row has-cover rv" href="{{ post.url }}">
+      <div class="post-thumb">{{ post | postCover | safe }}</div>
       <div>
+        <span class="mono post-date">{{ post.date | readableDate }}</span>
         <h2>{{ post.data.title }}</h2>
         {% if post.data.description %}<p>{{ post.data.description }}</p>{% endif %}
         <div class="chips" style="margin:12px 0 0">{% for t in post.data.tags %}{% if t != "posts" %}<span class="chip">{{ t }}</span>{% endif %}{% endfor %}</div>

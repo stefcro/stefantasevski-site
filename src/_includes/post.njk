@@ -16,6 +16,7 @@ ctaTitle: Want this applied to your site?
       <div><b>Stefan Tasevski</b><span><time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time> · {{ readMins }} min read</span></div>
     </div>
   </header>
+  <div class="post-cover rv">{{ { page: page, data: { tags: tags, title: title, image: image } } | postCover | safe }}</div>
   <div class="prose rv">
 {{ content | safe }}
   </div>
