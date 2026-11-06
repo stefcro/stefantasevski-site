@@ -306,3 +306,28 @@ html,body{overflow-x:clip}
 .card:has(.card-logo) .chips{margin-right:150px}
 @media (max-width:1000px){.xp{grid-template-columns:120px 1fr auto}.xp .win{grid-column:2 / -1;grid-row:2}.xp-logo{grid-row:1 / span 2}}
 @media (max-width:680px){.xp{grid-template-columns:84px 1fr;gap:6px 14px}.xp .when{grid-column:2;text-align:left}.xp .win{grid-column:2;grid-row:auto}.xp-logo{grid-row:1 / span 3;align-self:start;height:auto;align-items:flex-start;padding-top:6px}.xp-logo img{max-width:80px;height:calc(var(--h,28px)*.8)}.card-logo{max-width:100px}.card:has(.card-logo) .chips{margin-right:110px}}
+
+/* ---------- CASE STUDY: German eCommerce ---------- */
+.chip-strong{background:var(--ink);color:#fff;border-color:var(--ink);font-weight:500;padding:6px 12px;font-size:13px}
+.cs-cover{padding:0!important}
+.cs-cover>img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}
+.cs-cover-tag{position:absolute;top:22px;left:24px;color:#cfcfcf!important;background:rgba(0,0,0,.35);backdrop-filter:blur(6px);padding:6px 12px;border-radius:99px;font-size:12px}
+.cs-cover .results{margin:0;border-radius:0}
+.shot{margin:28px 0;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:10px;overflow:hidden}
+.shot img{width:100%;height:auto;border-radius:10px}
+.shot figcaption{font-size:13px;color:var(--muted);padding:10px 6px 2px}
+.table-wrap{overflow-x:auto;margin:22px 0;border:1px solid var(--line);border-radius:16px;background:var(--paper)}
+.kw-table{width:100%;border-collapse:collapse;font-size:16px;min-width:480px}
+.kw-table th{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500;text-align:left;padding:14px 18px;border-bottom:1px solid var(--line)}
+.kw-table td{padding:14px 18px;border-bottom:1px solid var(--line)}
+.kw-table tr:last-child td{border-bottom:0}
+.kw-table td:nth-child(n+2),.kw-table th:nth-child(n+2){text-align:right;white-space:nowrap}
+.kw-table td b{display:inline-block;min-width:34px;text-align:center;background:var(--accent);border-radius:8px;padding:2px 8px}
+.story blockquote.quote{border-left:4px solid var(--accent);padding-left:22px;margin-top:22px}
+.thumb.photo{background-size:cover;background-position:center}
+.thumb.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.55),transparent 60%)}
+.thumb.photo .metric,.thumb.photo .badge{position:relative;z-index:2}
+@media (max-width:680px){.cs-cover-tag{top:12px;left:12px}.kw-table{font-size:14px}}
+.shot-pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.shot-pair .shot{margin:0}
+@media (max-width:680px){.shot-pair{grid-template-columns:1fr}}
