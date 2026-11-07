@@ -1,4 +1,7 @@
+import fs from "node:fs";
+import path from "node:path";
 import postCover from "./src/_includes/postCover.js";
+import { renderOgCard, ogSlug } from "./src/_includes/ogCard.js";
 
 export default function (eleventyConfig) {
   // Static files copied as-is
@@ -27,6 +30,33 @@ export default function (eleventyConfig) {
     if (d.image) return `<img class="post-cover-img" src="${d.image}" alt="" loading="lazy">`;
     return postCover(slug, (d.tags || []).filter((t) => t !== "posts"));
   });
+  // ---- Social share cards ----
+  // Absolute URL of a page's generated share image
+  eleventyConfig.addFilter("ogImageUrl", (url, base) => new URL(`/og/${ogSlug(url)}.png`, base).toString());
+  // Card description, embedded in the page as base64 JSON and removed after the build
+  eleventyConfig.addFilter("ogCardMeta", (card) => Buffer.from(JSON.stringify(card)).toString("base64"));
+  eleventyConfig.on("eleventy.after", async ({ dir, results }) => {
+    const pages = [];
+    for (const r of results || []) {
+      if (!r.outputPath || !r.outputPath.endsWith(".html")) continue;
+      const m = String(r.content).match(/<meta name="x-og-card" content="([^"]+)">\n?/);
+      if (!m) continue;
+      const card = JSON.parse(Buffer.from(m[1], "base64").toString("utf8"));
+      card.tags = (card.tags || []).filter((t) => t !== "posts");
+      pages.push({ r, card, tag: m[0] });
+    }
+    const posts = pages.filter((p) => p.card.kind === "post").map((p) => p.card)
+      .sort((a, b) => new Date(b.date) - new Date(a.date));
+    const outDir = path.join(dir.output, "og");
+    fs.mkdirSync(outDir, { recursive: true });
+    for (const { r, card, tag } of pages) {
+      if (card.kind === "hub") card.covers = posts;
+      fs.writeFileSync(path.join(outDir, `${ogSlug(r.url)}.png`), await renderOgCard(card));
+      fs.writeFileSync(r.outputPath, String(r.content).replace(tag, ""));
+    }
+    console.log(`[og] ${pages.length} share cards`);
+  });
+
   eleventyConfig.addFilter("head", (arr = [], n) => arr.slice(0, n));
   eleventyConfig.addFilter("absUrl", (path, base) => new URL(path, base).toString());
   eleventyConfig.addFilter("jsonString", (s = "") => JSON.stringify(String(s)));

@@ -47,3 +47,22 @@ Every commit to `main` publishes automatically.
 npm install
 npm run dev   # http://localhost:8080
 ```
+
+## Social share images (LinkedIn, X, Slack…)
+
+Every page gets a branded 1200×630 share card, generated at build time into `/og/`.
+New blog posts get one automatically from their title, tags, date and cover.
+
+Optional front-matter fields to customise a card:
+
+| Field | Example | Used for |
+|---|---|---|
+| `ogTitle` | `"Shorter title for social"` | Title on the card and in the preview |
+| `ogKind` | `case` | Use the case-study layout (big number) |
+| `ogMetric` | `"298"` | Big number on case-study cards |
+| `ogMetricLabel` | `"keywords in Google’s top 3"` | Text next to the number |
+| `ogKicker` | `"Case study · German eCommerce"` | Small label at the top |
+| `image` | `/assets/blog/photo.jpg` | Use your own photo (JPG/PNG) instead of the generated cover |
+
+After publishing, paste the URL into LinkedIn's Post Inspector
+(https://www.linkedin.com/post-inspector/) to refresh LinkedIn's cached preview.
