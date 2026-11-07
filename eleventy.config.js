@@ -6,6 +6,12 @@ import { renderOgCard, ogSlug } from "./src/_includes/ogCard.js";
 export default function (eleventyConfig) {
   // Static files copied as-is
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets", "src/styles.css": "styles.css", "src/main.js": "main.js" });
+  // Favicons and web app manifest at the site root
+  eleventyConfig.addPassthroughCopy({
+    "src/favicon.ico": "favicon.ico", "src/favicon-96x96.png": "favicon-96x96.png",
+    "src/apple-touch-icon.png": "apple-touch-icon.png", "src/icon-192.png": "icon-192.png",
+    "src/icon-512.png": "icon-512.png", "src/site.webmanifest": "site.webmanifest",
+  });
 
   // Blog collection: every Markdown file in src/blog/posts that is not a draft, newest first
   eleventyConfig.addCollection("posts", (api) =>
