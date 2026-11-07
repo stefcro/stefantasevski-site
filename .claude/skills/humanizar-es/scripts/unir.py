@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+"""Old name of join.py, kept so existing commands and agents keep working."""
+import os
+import runpy
+import sys
+
+_HERE = os.path.dirname(os.path.abspath(__file__))
+
+if __name__ == "__main__":
+    print("note: unir.py is now join.py", file=sys.stderr)
+    sys.argv[0] = os.path.join(_HERE, "join.py")
+    runpy.run_path(sys.argv[0], run_name="__main__")
+else:
+    sys.path.insert(0, _HERE)
+    from join import *  # noqa: E402,F401,F403

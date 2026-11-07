@@ -1,0 +1,35 @@
+# Concepts that must not be lost from the example essay (original.txt). Usage:
+#   python3 scripts/check.py examples/es/original.txt examples/es/2-final.txt \
+#       --concepts examples/es/concepts.txt
+#
+# One line per concept. Variants separated by |. Case and accents are ignored.
+# Whole word with optional plural; with a trailing *, by prefix.
+# join.py also keeps the proper nouns of this list capitalized.
+
+Aristóteles | Estagirita
+ousía
+Tomás de Aquino | Aquino
+potencia y acto
+no contradicción
+contingencia
+René Descartes | Descartes
+res cogitans
+res extensa
+Kant
+antinomias
+noúmeno
+Crítica de la razón pura
+Carnap
+positivismo lógico
+Heidegger
+Dasein
+olvido del ser
+mundos posibles
+identidad personal
+emergencia | emergentismo
+física cuántica
+cosmología
+inteligencia artificial
+subatómic*
+pragmatismo ciego
+compromisos ontológicos
