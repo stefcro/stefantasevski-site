@@ -483,3 +483,16 @@ html,body{overflow-x:clip}
 }
 .gsc-bar b{white-space:nowrap}
 .gsc-bar span:last-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+
+/* ---------- KEEP READING (end of blog posts) + case studies hub ---------- */
+.keep-reading{margin-top:64px;padding-top:28px;border-top:1px solid var(--line)}
+.keep-reading>h2{font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px}
+.keep-reading .post-row.has-cover{grid-template-columns:150px 1fr 44px}
+.keep-reading .post-row h3{font-size:20px}
+.keep-reading .post-row p{font-size:14.5px}
+.kr-case{display:grid;grid-template-columns:auto 1fr 44px;gap:16px;align-items:center;margin-top:18px;padding:18px 20px;border-radius:16px;background:var(--ink);color:#fff}
+.kr-case .mono{color:var(--accent);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.kr-case b{font-weight:600;font-size:16px;line-height:1.35}
+.kr-case .go-ic{border-color:#333;color:#fff}
+.cases-hub{grid-template-columns:repeat(2,1fr)}
+@media (max-width:680px){.keep-reading .post-row.has-cover{grid-template-columns:88px 1fr;gap:14px}.keep-reading .post-row p,.keep-reading .post-row .go-ic{display:none}.keep-reading .post-row h3{font-size:16px}.kr-case{grid-template-columns:1fr 44px}.kr-case .mono{grid-column:1 / -1}.cases-hub{grid-auto-columns:88%}}

@@ -20,6 +20,11 @@
       "source": "/blog/ai-knows-what-your-brand-does-but-not-who-its-for",
       "destination": "/blog/ai-knows-your-brand-does-it-know-who-its-for/",
       "permanent": true
+    },
+    {
+      "source": "/case-study.html",
+      "destination": "/case-studies/tyres-online/",
+      "permanent": true
     }
   ]
 }

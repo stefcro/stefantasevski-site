@@ -20,6 +20,25 @@ ctaTitle: Want this applied to your site?
   <div class="prose">
 {{ content | safe }}
   </div>
+  {% set others = [] %}
+  {% for p in collections.posts %}{% if p.url != page.url and others.length < 2 %}{% set others = (others.push(p), others) %}{% endif %}{% endfor %}
+  <section class="keep-reading">
+    <h2 class="mono">Keep reading</h2>
+    <div class="post-list">
+      {% for p in others %}
+      <a class="post-row has-cover" href="{{ p.url }}">
+        <div class="post-thumb">{{ p | postCover | safe }}</div>
+        <div><h3>{{ p.data.title }}</h3>{% if p.data.description %}<p>{{ p.data.description }}</p>{% endif %}</div>
+        <span class="go-ic"><svg width="14" height="14"><use href="#arr"/></svg></span>
+      </a>
+      {% endfor %}
+    </div>
+    <a class="kr-case" href="/case-studies/german-ecommerce/">
+      <span class="mono">Case study</span>
+      <b>From 15 to 298 top-3 rankings in six months for a German eCommerce brand</b>
+      <span class="go-ic"><svg width="14" height="14"><use href="#arr"/></svg></span>
+    </a>
+  </section>
   <aside class="author-box rv">
     <img src="/assets/stefan.webp" alt="">
     <div>
