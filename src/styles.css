@@ -236,7 +236,7 @@ html,body{overflow-x:clip}
 @media (max-width:680px){
   .status{font-size:12.5px;padding:8px 12px}
   .nav .btn{padding:10px 14px;font-size:14px}
-  .hero-name{font-size:clamp(48px,17vw,110px)}
+  .hero-name{font-size:clamp(44px,15.5vw,110px)}
   .hero-name .outline{-webkit-text-stroke:1.4px var(--ink)}
   .hero-grid{grid-template-columns:1fr;margin-top:24px;gap:24px}
   .portrait{grid-column:1;grid-row:auto;max-width:none;justify-self:stretch;order:3;margin:0 -8px}
@@ -496,3 +496,18 @@ html,body{overflow-x:clip}
 .kr-case .go-ic{border-color:#333;color:#fff}
 .cases-hub{grid-template-columns:repeat(2,1fr)}
 @media (max-width:680px){.keep-reading .post-row.has-cover{grid-template-columns:88px 1fr;gap:14px}.keep-reading .post-row p,.keep-reading .post-row .go-ic{display:none}.keep-reading .post-row h3{font-size:16px}.kr-case{grid-template-columns:1fr 44px}.kr-case .mono{grid-column:1 / -1}.cases-hub{grid-auto-columns:88%}}
+
+/* ---------- HERO on tablets: copy below the name, two columns ---------- */
+@media (max-width:1180px){
+  .hero-grid{grid-template-columns:1fr 1fr;margin-top:clamp(24px,3.5vw,40px);align-items:start}
+  .portrait{grid-column:2;grid-row:1 / span 2;max-width:440px;justify-self:end;width:100%;align-self:end;margin-top:-7vw}
+  .hero-copy{grid-column:1;grid-row:1;padding-bottom:0}
+  .hero-copy p{max-width:420px}
+  .socials{grid-column:1;grid-row:2;align-items:flex-start;flex-direction:row;flex-wrap:wrap;padding-bottom:32px;align-self:end}
+}
+@media (max-width:680px){
+  .hero-grid{grid-template-columns:1fr;margin-top:24px}
+  .portrait{grid-column:1;grid-row:auto;margin-top:0;max-width:none;justify-self:stretch}
+  .hero-copy,.socials{grid-column:1;grid-row:auto}
+  .socials{padding-bottom:0}
+}
