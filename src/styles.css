@@ -180,6 +180,8 @@ html,body{overflow-x:clip}
 /* ---------- reveal ---------- */
 .rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
 .rv.in{opacity:1;transform:none}
+/* above the fold: show at once, no fade (faster first paint and LCP) */
+.hero .rv,.stats-band .rv,.cs-hero .rv,.cs-hero+.panel.rv,.post-head .rv{opacity:1;transform:none;transition:none}
 @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}.marquee-track{animation:none}html{scroll-behavior:auto}}
 
 /* ---------- CASE STUDY ---------- */
