@@ -24,7 +24,7 @@ They're roughly in order of how much I'd miss them.
 | Screaming Frog | Technical crawls and audits | Free up to 500 URLs |
 | AnswerThePublic | Long-tail questions | Limited free searches |
 | AlsoAsked | People Also Ask trees and H2s | Limited free searches |
-| Claude | Analysis, regex, briefs, proofreading | Free and paid plans |
+| Claude | Analysis, regex, HTML, briefs | Free and paid plans |
 | KeySearch | Budget keyword research | Paid |
 
 ## 1. Google Search Console
@@ -154,7 +154,9 @@ What bugs me: it's narrow. It does one thing, and you'll run out of free searche
 
 ## 9. Claude
 
-**Best for:** analysis, regex, briefs and proofreading · **Price:** free plan, paid plans for heavier use
+<figure class="tool-shot"><img src="/assets/blog/seo-tools/claude-html-layout.webp" alt="Claude chat with a generated HTML landing page section for a sale, shown in the preview panel next to the conversation" width="1600" height="873" loading="lazy"><figcaption>Claude building an HTML sale section, with the live preview on the right (chat blurred).</figcaption></figure>
+
+**Best for:** analysis, regex, briefs, HTML and proofreading · **Price:** free plan, paid plans for heavier use
 
 Claude is the one I experiment with the most. I'm still finding new ways to use it, and some of them stick.
 
@@ -164,6 +166,7 @@ Right now I use it to:
 - Make sense of big exports. I paste a keyword or page export and ask it to group keywords by intent or find patterns I missed.
 - Draft content briefs and outlines, which I then rewrite with what I actually know about the brand and its customers.
 - Check schema markup and proofread copy before it goes live.
+- Generate HTML for landing pages and page sections, and change layouts where it helps conversions. If a page ranks but doesn't convert, I use it to rework the hero, the call to action or the order of sections.
 
 What I like: it's very good with long documents and data, and it's honest when it doesn't know something.
 
