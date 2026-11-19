@@ -4,6 +4,7 @@ description: "The 10 SEO tools I open every day as an SEO Lead: what I use each 
 date: 2026-11-19
 tags: ["SEO tools", "Workflow"]
 draft: false
+image: /assets/blog/seo-tools/cover-seo-tools-collage.webp
 ---
 
 I've been doing SEO for more than ten years, for eCommerce stores, B2B companies and agencies. I've tried a lot of tools in that time. Most of them I cancelled after a month.
