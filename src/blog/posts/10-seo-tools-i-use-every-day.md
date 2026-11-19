@@ -19,7 +19,7 @@ They're roughly in order of how much I'd miss them.
 | Google Search Console | Real clicks, queries and indexing | Free |
 | Ahrefs | Backlinks and competitor research | Paid |
 | Semrush | Keyword research and keyword gaps | Paid |
-| SE Ranking | Rank tracking and client reports | Paid |
+| SE Ranking | Rank tracking and reporting | Paid |
 | Microsoft Clarity | Dead clicks, user paths, internal links | Free |
 | Screaming Frog | Technical crawls and audits | Free up to 500 URLs |
 | AnswerThePublic | Long-tail questions | Limited free searches |
@@ -29,13 +29,13 @@ They're roughly in order of how much I'd miss them.
 
 ## 1. Google Search Console
 
-<figure class="tool-shot"><img src="/assets/blog/seo-tools/google-search-console-performance.webp" alt="Google Search Console Performance report with 12 months of clicks and impressions for an eCommerce site" width="1600" height="876" loading="lazy"><figcaption>The Performance report for an eCommerce client over 12 months (property and queries blurred).</figcaption></figure>
+<figure class="tool-shot"><img src="/assets/blog/seo-tools/google-search-console-performance.webp" alt="Google Search Console Performance report with 12 months of clicks and impressions for an eCommerce site" width="1600" height="876" loading="lazy"><figcaption>The Performance report over 12 months (property and queries blurred).</figcaption></figure>
 
 **Best for:** first-party search data and indexing · **Price:** free
 
 If you only use one tool from this list, use this one. Every other SEO tool is guessing. Search Console is Google telling you what actually happened.
 
-I use it every morning. I check clicks and impressions for the pages I care about, look at which queries are growing, and see which pages dropped. When I start with a new client, this is the first access I ask for, before any paid tool.
+I use it every morning. I check clicks and impressions for the pages I care about, look at which queries are growing, and see which pages dropped. When I start on a new site, this is the first access I ask for, before any paid tool.
 
 What I use it for the most:
 
@@ -50,19 +50,19 @@ What bugs me: the interface only shows 1,000 rows, a lot of queries are hidden f
 
 ## 2. Ahrefs
 
-<figure class="tool-shot"><img src="/assets/blog/seo-tools/ahrefs-keywords-explorer.webp" alt="Ahrefs Keywords Explorer showing search volume trends for a German keyword list" width="1600" height="721" loading="lazy"><figcaption>Ahrefs Keywords Explorer, from a German eCommerce project I work on.</figcaption></figure>
+<figure class="tool-shot"><img src="/assets/blog/seo-tools/ahrefs-keywords-explorer.webp" alt="Ahrefs Keywords Explorer showing search volume trends for a keyword list" width="1600" height="721" loading="lazy"><figcaption>Ahrefs Keywords Explorer, where I check search volume trends for a keyword list.</figcaption></figure>
 
 **Best for:** backlinks and competitor research · **Price:** paid (free Webmaster Tools for your own sites)
 
 Ahrefs is the tool I open when I need to understand a competitor. Who links to them, which pages bring them traffic, which keywords they rank for that we don't.
 
-I use Site Explorer almost daily. When a client asks "why does this competitor outrank us?", the answer usually starts in their backlink profile and their top pages report. For link building work I live in the referring domains and the "best by links" reports. That's how I find the pages that earn links on their own, and the sites that might link to us too.
+I use Site Explorer almost daily. When someone asks "why does this competitor outrank us?", the answer usually starts in their backlink profile and their top pages report. For link building work I live in the referring domains and the "best by links" reports. That's how I find the pages that earn links on their own, and the sites that might link to us too.
 
 I've also started experimenting with their AI visibility features to see how often a brand shows up in AI answers. It's early, but I think this will matter more every year. I wrote about the bigger picture in [AI Knows Your Brand. Does It Know Who It's For?](/blog/ai-knows-your-brand-does-it-know-who-its-for/)
 
-What I like: the backlink index is the one I trust most, and the data is easy to read even for clients.
+What I like: the backlink index is the one I trust most, and the data is easy to explain to people outside SEO.
 
-What bugs me: it's expensive, and the traffic estimates can be far off when I compare them with a client's real Search Console data. I use it for direction and comparison, never as the truth.
+What bugs me: it's expensive, and the traffic estimates can be far off when I compare them with real Search Console data. I use it for direction and comparison, never as the truth.
 
 ## 3. Semrush
 
@@ -80,15 +80,15 @@ What bugs me: the interface tries to do everything, so it can feel crowded. I've
 
 ## 4. SE Ranking
 
-<figure class="tool-shot"><img src="/assets/blog/seo-tools/se-ranking-rank-tracking.webp" alt="SE Ranking detailed rankings report with top 1, top 3 and top 10 position filters for Google Germany" width="1600" height="826" loading="lazy"><figcaption>SE Ranking’s detailed rankings view. I watch the TOP 3 and TOP 10 counts every day.</figcaption></figure>
+<figure class="tool-shot"><img src="/assets/blog/seo-tools/se-ranking-rank-tracking.webp" alt="SE Ranking detailed rankings report with top 1, top 3 and top 10 position filters" width="1600" height="826" loading="lazy"><figcaption>SE Ranking’s detailed rankings view. I watch the TOP 3 and TOP 10 counts every day.</figcaption></figure>
 
-**Best for:** rank tracking and client reporting · **Price:** paid, cheaper than the two above
+**Best for:** rank tracking and reporting · **Price:** paid, cheaper than the two above
 
-I use SE Ranking for one main job: tracking rankings every day. I've used rank trackers inside Ahrefs and Semrush too, but for daily tracking of a set keyword list I prefer SE Ranking. It's affordable, it's fast, and the reports are clean enough to send to clients without much editing.
+I use SE Ranking for one main job: tracking rankings every day. I've used rank trackers inside Ahrefs and Semrush too, but for daily tracking of a set keyword list I prefer SE Ranking. It's affordable, it's fast, and the reports are clean enough to share with the team without much editing.
 
 I set up projects per market and per device, tag keywords by page type (category, product, blog), and watch the top 3 and top 10 counts. The top 3 is where the clicks are, so that's the number I track hardest.
 
-What I like: price for value, accurate daily tracking, simple client reports.
+What I like: price for value, accurate daily tracking, simple reports.
 
 What bugs me: the backlink and keyword research data is thinner than Ahrefs or Semrush. I don't use it for that.
 
@@ -112,7 +112,7 @@ What bugs me: watching recordings can eat a whole afternoon if you're not carefu
 
 ## 6. Screaming Frog
 
-<figure class="tool-shot"><img src="/assets/blog/seo-tools/screaming-frog-seo-spider.webp" alt="Screaming Frog SEO Spider crawl showing response code issues, canonical issues and issue details" width="1600" height="914" loading="lazy"><figcaption>A Screaming Frog crawl of a client store (URLs blurred). The Issues tab is where every audit starts for me.</figcaption></figure>
+<figure class="tool-shot"><img src="/assets/blog/seo-tools/screaming-frog-seo-spider.webp" alt="Screaming Frog SEO Spider crawl showing response code issues, canonical issues and issue details" width="1600" height="914" loading="lazy"><figcaption>A Screaming Frog crawl of an eCommerce site (URLs blurred). The Issues tab is where every audit starts for me.</figcaption></figure>
 
 **Best for:** technical SEO audits · **Price:** free up to 500 URLs, paid licence after that
 
@@ -162,7 +162,7 @@ Right now I use it to:
 
 - Write regex for Search Console filters, which I used to do by trial and error.
 - Make sense of big exports. I paste a keyword or page export and ask it to group keywords by intent or find patterns I missed.
-- Draft content briefs and outlines, which I then rewrite with what I actually know about the client.
+- Draft content briefs and outlines, which I then rewrite with what I actually know about the brand and its customers.
 - Check schema markup and proofread copy before it goes live.
 
 What I like: it's very good with long documents and data, and it's honest when it doesn't know something.
@@ -175,7 +175,7 @@ What bugs me: you still have to check everything. It will sound confident about 
 
 **Best for:** budget keyword research · **Price:** paid, one of the cheapest options
 
-KeySearch is my quick keyword check. When I want a fast read on volume and difficulty without opening a big suite, or when I'm working on a smaller site or a side project, I use KeySearch.
+KeySearch is my quick keyword check. When I want a fast read on volume and difficulty without opening a big suite, or when I'm working on a smaller site, I use KeySearch.
 
 I like its difficulty score for finding easier keywords, and the competitor view shows me how strong the pages on page one are. For smaller budgets it covers most of what you need.
 
