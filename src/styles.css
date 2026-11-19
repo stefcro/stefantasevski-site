@@ -513,3 +513,4 @@ html,body{overflow-x:clip}
   .hero-copy,.socials{grid-column:1;grid-row:auto}
   .socials{padding-bottom:0}
 }
+@media (max-width:680px){.prose th,.prose td{font-size:14px;padding:10px 8px}}
