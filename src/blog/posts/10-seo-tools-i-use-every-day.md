@@ -29,6 +29,8 @@ They're roughly in order of how much I'd miss them.
 
 ## 1. Google Search Console
 
+<figure class="tool-shot"><img src="/assets/blog/seo-tools/google-search-console-performance.webp" alt="Google Search Console Performance report with 12 months of clicks and impressions for an eCommerce site" width="1600" height="876" loading="lazy"><figcaption>The Performance report for an eCommerce client over 12 months (property and queries blurred).</figcaption></figure>
+
 **Best for:** first-party search data and indexing · **Price:** free
 
 If you only use one tool from this list, use this one. Every other SEO tool is guessing. Search Console is Google telling you what actually happened.
@@ -48,6 +50,8 @@ What bugs me: the interface only shows 1,000 rows, a lot of queries are hidden f
 
 ## 2. Ahrefs
 
+<figure class="tool-shot"><img src="/assets/blog/seo-tools/ahrefs-keywords-explorer.webp" alt="Ahrefs Keywords Explorer showing search volume trends for a German keyword list" width="1600" height="721" loading="lazy"><figcaption>Ahrefs Keywords Explorer, from a German eCommerce project I work on.</figcaption></figure>
+
 **Best for:** backlinks and competitor research · **Price:** paid (free Webmaster Tools for your own sites)
 
 Ahrefs is the tool I open when I need to understand a competitor. Who links to them, which pages bring them traffic, which keywords they rank for that we don't.
@@ -62,6 +66,8 @@ What bugs me: it's expensive, and the traffic estimates can be far off when I co
 
 ## 3. Semrush
 
+<figure class="tool-shot"><img src="/assets/blog/seo-tools/semrush-keyword-magic-tool.webp" alt="Semrush Keyword Magic Tool with keyword groups, intent, volume and keyword difficulty for the seed keyword online shop" width="1600" height="995" loading="lazy"><figcaption>Semrush’s Keyword Magic Tool. Image: Semrush Knowledge Base.</figcaption></figure>
+
 **Best for:** keyword research and keyword gaps · **Price:** paid
 
 Semrush and Ahrefs overlap a lot. People ask me why I pay for both. My honest answer: they're good at different things, and I like having a second opinion.
@@ -74,6 +80,8 @@ What bugs me: the interface tries to do everything, so it can feel crowded. I've
 
 ## 4. SE Ranking
 
+<figure class="tool-shot"><img src="/assets/blog/seo-tools/se-ranking-rank-tracking.webp" alt="SE Ranking detailed rankings report with top 1, top 3 and top 10 position filters for Google Germany" width="1600" height="826" loading="lazy"><figcaption>SE Ranking’s detailed rankings view. I watch the TOP 3 and TOP 10 counts every day.</figcaption></figure>
+
 **Best for:** rank tracking and client reporting · **Price:** paid, cheaper than the two above
 
 I use SE Ranking for one main job: tracking rankings every day. I've used rank trackers inside Ahrefs and Semrush too, but for daily tracking of a set keyword list I prefer SE Ranking. It's affordable, it's fast, and the reports are clean enough to send to clients without much editing.
@@ -85,6 +93,8 @@ What I like: price for value, accurate daily tracking, simple client reports.
 What bugs me: the backlink and keyword research data is thinner than Ahrefs or Semrush. I don't use it for that.
 
 ## 5. Microsoft Clarity
+
+<figure class="tool-shot"><img src="/assets/blog/seo-tools/microsoft-clarity-session-recording.webp" alt="Microsoft Clarity session recording of stefantasevski.com with AI session insights flagging a dead click" width="1600" height="857" loading="lazy"><figcaption>A Clarity recording from this site. Its AI session insights flagged a slow first load, which I then fixed.</figcaption></figure>
 
 **Best for:** dead clicks, user paths and internal links · **Price:** free
 
@@ -102,6 +112,8 @@ What bugs me: watching recordings can eat a whole afternoon if you're not carefu
 
 ## 6. Screaming Frog
 
+<figure class="tool-shot"><img src="/assets/blog/seo-tools/screaming-frog-seo-spider.webp" alt="Screaming Frog SEO Spider crawl showing response code issues, canonical issues and issue details" width="1600" height="914" loading="lazy"><figcaption>A Screaming Frog crawl of a client store (URLs blurred). The Issues tab is where every audit starts for me.</figcaption></figure>
+
 **Best for:** technical SEO audits · **Price:** free up to 500 URLs, paid licence after that
 
 Every technical audit I do starts with a Screaming Frog crawl. I crawl the site the way Google would, then look for broken links, redirect chains, missing or duplicate titles, canonicals pointing to the wrong place, and pages blocked by robots or noindex.
@@ -114,6 +126,8 @@ What bugs me: it looks like software from 2010, and on very big sites you need a
 
 ## 7. AnswerThePublic
 
+<figure class="tool-shot"><img src="/assets/blog/seo-tools/answerthepublic-question-wheel.webp" alt="AnswerThePublic question wheel grouping questions about marketing by search engines, AI models, social media and shopping" width="1100" height="1100" loading="lazy"><figcaption>AnswerThePublic’s question wheel. Image: AnswerThePublic.</figcaption></figure>
+
 **Best for:** finding long-tail questions · **Price:** a few free searches per day, paid plans for more
 
 When I plan content for a topic, I want to know how real people phrase their questions. AnswerThePublic takes one keyword and shows the questions around it, grouped by who, what, why, how and where, plus comparisons like "X vs Y".
@@ -125,6 +139,8 @@ What I like: fast, visual, and it shows phrasing I wouldn't think of.
 What bugs me: there's no real volume data on the free plan, and the free searches run out quickly.
 
 ## 8. AlsoAsked
+
+<figure class="tool-shot"><img src="/assets/blog/seo-tools/alsoasked-people-also-ask.webp" alt="AlsoAsked People Also Ask question tree for the query search engine optimization" width="1600" height="851" loading="lazy"><figcaption>AlsoAsked’s question tree for “search engine optimization”.</figcaption></figure>
 
 **Best for:** People Also Ask trees and H2 ideas · **Price:** a few free searches, paid plans for more
 
@@ -154,6 +170,8 @@ What I like: it's very good with long documents and data, and it's honest when i
 What bugs me: you still have to check everything. It will sound confident about things it got wrong, so I never publish or send anything from it without reading it myself. I use it as an assistant, and I'm still the one making the calls.
 
 ## 10. KeySearch
+
+<figure class="tool-shot"><img src="/assets/blog/seo-tools/keysearch-serp-analysis.webp" alt="KeySearch SERP analysis table with page authority, domain authority and links for each ranking page" width="866" height="551" loading="lazy"><figcaption>KeySearch’s SERP analysis, where I check how strong page one is. Image: KeySearch.</figcaption></figure>
 
 **Best for:** budget keyword research · **Price:** paid, one of the cheapest options
 

@@ -514,3 +514,9 @@ html,body{overflow-x:clip}
   .socials{padding-bottom:0}
 }
 @media (max-width:680px){.prose th,.prose td{font-size:14px;padding:10px 8px}}
+
+/* screenshots inside posts */
+.prose figure.tool-shot{margin:18px 0 22px}
+.prose figure.tool-shot img{width:100%;height:auto;border-radius:12px;border:1px solid var(--line);box-shadow:0 18px 40px -28px rgba(0,0,0,.35)}
+.prose figure.tool-shot figcaption{font-size:13.5px;color:var(--muted);margin-top:8px}
+.prose figure.tool-shot img[width="1100"]{max-width:560px;display:block;margin:0 auto}
